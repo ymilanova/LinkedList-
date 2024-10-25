@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleList with Indexers", "SimpleList with Indexers.csproj", "{0349ECD4-9399-4FB9-8307-2D4F793E0C5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0349ECD4-9399-4FB9-8307-2D4F793E0C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0349ECD4-9399-4FB9-8307-2D4F793E0C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0349ECD4-9399-4FB9-8307-2D4F793E0C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0349ECD4-9399-4FB9-8307-2D4F793E0C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED1F5795-C073-4DA9-B0A1-4B6271791CE6}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +11,10 @@ namespace SimpleList_with_Indexers
     {
         private T _data;
         private Entry<T> _next;
+        private T _index;
 
 
-        public void SetNext(Entry<T> next)
+        public void SetNext(Entry<T> next,T index)
         {
             _next = next;
         }
@@ -20,10 +22,21 @@ namespace SimpleList_with_Indexers
         {
             return _next;
         }
-        public Entry (T data)
+        public T GetData()
+        {
+            return _data;
+        }
+        public void SetData(T data)
         {
             _data = data;
+           
         }
+        public Entry (T data,T index)
+        {
+            _data = data;
+            _index = index;
+        }
+        public T GetIndex() { return _index; }
 
-}
+    }
 }

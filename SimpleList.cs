@@ -15,7 +15,7 @@ namespace SimpleList_with_Indexers
 
         public void Add(T value, T index)
         {
-            Entry<T> temp = new Entry<T>(value, index);
+            Entry<T> temp = new Entry<T>(value);
             if (_head == null && _tail == null)
             {
                 _head = temp;
@@ -24,7 +24,7 @@ namespace SimpleList_with_Indexers
             else
             {
 
-                _tail.SetNext(temp, index);
+                _tail.SetNext(temp);
                 _tail = temp;
 
 
@@ -53,7 +53,7 @@ namespace SimpleList_with_Indexers
             {
                 return;
             }
-            previous.SetNext(node.GetNext(),node.GetNext().GetIndex());
+            previous.SetNext(node.GetNext());
 
 
         }
@@ -91,39 +91,9 @@ namespace SimpleList_with_Indexers
             }
             return arr;
         }
-        public T this[T index]
-        {
-            get
-            {
-                Entry<T> temp = _head;
-                while (temp != null)
-                {
-                    if (temp.GetIndex().Equals(index))
-                    {
-                        return temp.GetData();
-                    }
-                    temp = temp.GetNext();
-                }
-                 throw new Exception("cant get");
-            }
-            set
-            {
-                Entry<T> temp = _head;
-                while (temp != null)
-                {
-                    if (temp.GetIndex().Equals(index))
-                    {
-                        temp.SetData(value);
-                        return;
-                    }
-                    temp = temp.GetNext();
-                }
-                throw new Exception("cant set");
 
+    }   
 
-            }
-        }
-
-}   }
+}
 
    

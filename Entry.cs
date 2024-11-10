@@ -11,10 +11,10 @@ namespace SimpleList_with_Indexers
     {
         private T _data;
         private Entry<T> _next;
-        private T _index;
+      
 
 
-        public void SetNext(Entry<T> next,T index)
+        public void SetNext(Entry<T> next)
         {
             _next = next;
         }
@@ -31,12 +31,12 @@ namespace SimpleList_with_Indexers
             _data = data;
            
         }
-        public Entry (T data,T index)
+        public Entry (T data)
         {
             _data = data;
-            _index = index;
+          
         }
-        public T GetIndex() { return _index; }
+      
 
     }
 }

@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleList_with_Indexers
+namespace SimpleList
 {
     internal class Entry<T> where T : IComparable
     {

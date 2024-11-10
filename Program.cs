@@ -1,4 +1,4 @@
-﻿namespace SimpleList_with_Indexers
+﻿namespace SimpleList
 {
     internal class Program
     {

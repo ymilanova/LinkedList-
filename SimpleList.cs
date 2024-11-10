@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace SimpleList_with_Indexers
+namespace SimpleList
 {
     internal class SimpleList<T> where T : IComparable
     {
